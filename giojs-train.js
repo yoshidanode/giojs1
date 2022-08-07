@@ -8,7 +8,15 @@ $(function () {
     var controller = new GIO.Controller( container );
 
     controller.setInitCountry("JP");//最初にフォーカスされる国の選択
-    controller.setStyle("magic");//地球モデルのデザインを設定
+    //controller.setStyle("mint");//地球モデルのデザインを設定
+    //controller.adjustMentionedBrightness(0.9);
+    controller.setAutoRotation( true, 1 );
+    controller.setBackgroundColor("#004F80");
+    //controller.lightenMentioned(true);
+    //controller.adjustMentionedBrightness(0.9);
+
+    //controller.setSurfaceColor("0xFF0000");
+    controller.disableUnmentioned(false);
 
     //データを追加する
     //ランダムで１０カ国を選択し、日本とリンクするデータを作成
